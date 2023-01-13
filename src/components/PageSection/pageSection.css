@@ -1,6 +1,11 @@
 .section-container {
-  border: solid 2px white;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   height: 90vh;
+}
+
+.section-title {
+  color: #c90016;
+  font-size: 30px;
 }

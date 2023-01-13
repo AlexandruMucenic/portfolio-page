@@ -1,0 +1,28 @@
+.header-container {
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  font-size: 8rem;
+  line-height: 7rem;
+  align-self: center;
+}
+
+.header-title:hover {
+  color: #c90016;
+  font-size: 9rem;
+  animation: rubberband 800ms alternate ease-out;
+  transition: 0.7s;
+}
+
+.header-description {
+  align-self: flex-start;
+}
+
+.header-child-container {
+  align-self: flex-end;
+  margin: 24px;
+}
