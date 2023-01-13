@@ -1,0 +1,10 @@
+svg {
+  width: 30px;
+  height: 15px;
+}
+
+.social-links-container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}

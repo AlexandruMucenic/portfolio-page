@@ -1,0 +1,13 @@
+.menu-container {
+  height: 100vh;
+  width: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
