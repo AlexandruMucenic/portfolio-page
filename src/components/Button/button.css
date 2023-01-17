@@ -1,0 +1,18 @@
+.btn {
+  width: 170px;
+  padding: 14px 24px;
+  margin: 4px;
+
+  border: solid 1px #c90016;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0px 1px 2px 3px rgb(0, 0, 0);
+}
+
+.btn:hover {
+  background: #c90016;
+  transition: 0.8s ease-out all;
+}

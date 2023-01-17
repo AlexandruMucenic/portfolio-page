@@ -1,25 +1,20 @@
-import PageSection from '../PageSection/PageSection';
+import HeaderSection from '../HeaderSection/HeaderSection';
+import WorkSection from '../WorkSection/WorkSection';
+import SkillsSection from '../SkillsSection/SkillsSection';
+import ContactSection from '../ContactSection/ContactSection';
+import Button from '../Button/Button';
+
 import './mainPage.css';
 
 function Page() {
   return (
     <main className='main-container'>
-      <PageSection title='about' description='description'>
-        <button>Contact me</button>
-      </PageSection>
-
-      <PageSection title='work' description='description'>
-        <div> Child Component </div>
-      </PageSection>
-
-      <PageSection title='skills' description='description'>
-        <div> Child Component </div>
-      </PageSection>
-
-      <PageSection title='contact' description='description'>
-        <div> Child Component </div>
-        <button>Send Message</button>
-      </PageSection>
+      <HeaderSection>
+        <Button text='Contact Me!' />
+      </HeaderSection>
+      <WorkSection />
+      <SkillsSection />
+      <ContactSection />
     </main>
   );
 }
