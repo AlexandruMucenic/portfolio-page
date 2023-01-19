@@ -13,7 +13,3 @@
 .main-container::-webkit-scrollbar {
   display: none;
 }
-
-main > section {
-  height: 90vh;
-}

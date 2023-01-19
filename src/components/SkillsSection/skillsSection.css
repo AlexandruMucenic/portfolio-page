@@ -2,17 +2,14 @@
   display: flex;
   justify-content: space-between;
 
-  border: 2px solid white;
-  padding: 100px;
+  padding: 100px 48px;
 }
 
 .description-container {
-  border: 1px solid blue;
 }
 
 .skills-canvas {
   width: 500px;
-  border: 1px solid blue;
 }
 
 .skills-canvas > ul {

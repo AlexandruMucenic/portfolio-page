@@ -1,0 +1,18 @@
+.scroll-down-left {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  left: 0;
+
+  font-size: 14px;
+  color: #c90016;
+}
+
+.scroll-down-left > svg {
+  width: 12px;
+  height: 12px;
+}
+
+.scroll-down-left > span {
+}

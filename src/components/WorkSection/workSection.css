@@ -2,25 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 100px;
-
-  border: 2px solid white;
+  padding: 100px 48px;
 }
 
 .sites-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  align-self: center;
-
-  width: fit-content;
-  padding: 12px;
-
-  border: 2px solid green;
+  justify-content: space-between;
+  padding: 12px 0;
 }
 
 .sites-container > div {
-  width: 250px;
-  height: 200px;
-  border: 1px solid red;
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+.sites-container > div:hover {
+  filter: grayscale(0);
+  transform: scale(1);
 }
