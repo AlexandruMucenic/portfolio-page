@@ -13,16 +13,20 @@ function Header({ children }) {
         <br />
         <span>I</span>
         <span>'</span>
-        <span>m</span>
+        <span id='m'>m</span>
         <span>A</span>
         <span>l</span>
         <span>e</span>
         <span>x</span>
       </h1>
-      <p className='header-description'>
-        Web development enthusiast, at the beginning of his carrer. Welcome on
-        my presentation page!
-      </p>
+      <div className='header-description'>
+        <p className='description-first-line'>
+          Web development enthusiast, at the beginning of his carrer.
+        </p>
+        <p className='description-second-line'>
+          Welcome on my presentation page!
+        </p>
+      </div>
       <div className='header-child-container'>{children}</div>
       <ScrollDownLeft />
       <ScrollDownRight />

@@ -38,3 +38,9 @@ h2 {
   font-size: 3em;
   color: #c90016;
 }
+
+::placeholder {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  color: white;
+}

@@ -1,19 +1,42 @@
 .scroll-down-right {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
 
   position: absolute;
-  right: 0;
+  right: -30px;
+  left: auto;
+  bottom: 10px;
 
-  font-size: 14px;
+  width: fit-content;
+  height: 16px;
+
+  font-size: 16px;
+  transform: rotate(0.25turn);
 }
 
 .scroll-down-right > svg {
+  align-self: flex-end;
+
   width: 12px;
   height: 12px;
+  transform: rotate(0.75turn);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .scroll-down-right > span {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  animation: bounce 1s ease infinite;
 }

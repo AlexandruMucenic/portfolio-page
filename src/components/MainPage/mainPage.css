@@ -13,3 +13,12 @@
 .main-container::-webkit-scrollbar {
   display: none;
 }
+
+main > section {
+  height: 90vh;
+}
+
+main > header,
+footer {
+  height: 70vh;
+}

@@ -1,11 +1,6 @@
 .skills-container {
   display: flex;
   justify-content: space-between;
-
-  padding: 100px 48px;
-}
-
-.description-container {
 }
 
 .skills-canvas {
