@@ -1,23 +1,21 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-
-  padding: 100px 48px;
+  gap: 9vh;
+  position: relative;
+  height: 100vh;
+  padding: 100px 48px 0 64px;
+  letter-spacing: 1px;
 }
 
 .sites-container {
   display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
+  justify-content: space-evenly;
+  padding: 24px 0;
+  border: 1px solid #c90016;
+  box-shadow: 1px 3px 15px 18px rgb(0, 0, 0);
 }
 
-.sites-container > div {
-  transition: transform 0.5s, filter 1.5s ease-in-out;
-  filter: grayscale(100%);
-}
-
-.sites-container > div:hover {
-  filter: grayscale(0);
-  transform: scale(1);
+.work-description {
+  width: 85%;
 }
