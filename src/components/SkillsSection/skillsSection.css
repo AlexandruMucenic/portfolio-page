@@ -1,12 +1,21 @@
 .skills-container {
   display: flex;
-  justify-content: space-between;
+  gap: 15%;
+
+  height: 100vh;
+  padding: 100px 48px 0 64px;
 }
 
-.skills-canvas {
-  width: 500px;
+.skills-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 45%;
 }
 
-.skills-canvas > ul {
-  list-style: none;
+.tagcloud {
+  position: relative;
+  color: #c90016;
+  font-size: 20px;
+  font-weight: 600;
 }
