@@ -1,19 +1,22 @@
 .contact-container {
   display: flex;
-  gap: 68px;
+  gap: 48px;
+  height: 80vh;
+  padding: 100px 48px 0 64px;
 }
 
 .contact-form-container {
   display: flex;
   flex-direction: column;
-  gap: 36px;
-  width: 750px;
+  justify-content: center;
+  gap: 48px;
+  width: 50%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 
 .contact-form-input {
@@ -43,8 +46,7 @@
 
 .name-email-container {
   display: flex;
-  gap: 6px;
-
+  gap: 12px;
   width: 100%;
 }
 
@@ -52,9 +54,12 @@
   width: 50%;
 }
 
-.map-canvas {
-  width: 1000px;
-  height: 600px;
-  background: #c90016;
-  opacity: 0.6;
+.map-container {
+  width: 50%;
+  height: 100%;
+}
+
+.map-container > img {
+  width: 95%;
+  height: 100%;
 }

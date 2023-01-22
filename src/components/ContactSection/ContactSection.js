@@ -1,11 +1,13 @@
 import Button from '../Button/Button';
+
+import cluj from '../../imgs/Cluj.png';
 import './contactSection.css';
 
 function ContactSection() {
   return (
     <footer className='contact-container' id='contact'>
       <div className='contact-form-container'>
-        <h2 className='contact-form-title'>Contact</h2>
+        <h2 className='contact-form-title'>Contact Me</h2>
         <form className='contact-form'>
           <div className='name-email-container'>
             <input className='contact-form-input' placeholder='Name' />
@@ -19,9 +21,8 @@ function ContactSection() {
         </form>
         <Button text='Send Message!' />
       </div>
-
       <div className='map-container'>
-        <canvas className='map-canvas'>Here will be the map</canvas>
+        <img src={cluj} alt='Cluj-Napoca' />
       </div>
     </footer>
   );
