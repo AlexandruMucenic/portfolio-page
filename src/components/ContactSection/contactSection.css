@@ -2,7 +2,7 @@
   display: flex;
   gap: 48px;
   height: 80vh;
-  padding: 100px 48px 0 64px;
+  padding: 100px 48px 64px 64px;
 }
 
 .contact-form-container {

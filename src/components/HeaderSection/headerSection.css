@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-
   position: relative;
-
-  height: 75vh;
-  padding: 100px 48px 0 64px;
+  height: 55vh;
+  padding: 120px 48px 0 64px;
 }
 
 .header-title {
@@ -55,7 +53,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-
   align-self: flex-start;
 }
 
@@ -67,6 +64,7 @@
 .description-first-line {
   padding-left: 20px;
 }
+
 .description-second-line {
   padding-left: 40px;
 }

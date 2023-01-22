@@ -1,9 +1,9 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  gap: 9vh;
+  gap: 3rem;
   position: relative;
-  height: 100vh;
+  height: 65vh;
   padding: 100px 48px 0 64px;
   letter-spacing: 1px;
 }
