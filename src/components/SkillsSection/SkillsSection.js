@@ -44,9 +44,6 @@ function SkillsSection() {
           'HTML',
         ]}
       </TagCloud>
-
-      <ScrollDownLeft />
-      <ScrollDownRight />
     </section>
   );
 }
