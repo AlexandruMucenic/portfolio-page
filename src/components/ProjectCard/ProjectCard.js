@@ -4,12 +4,12 @@ function ProjectCard({ title, imageURL, description, projectURL }) {
   return (
     <div className='card-wrapper'>
       <div className='card-top'>
-        <img src={imageURL} alt='bookshop project' width={390} height={290} />
+        <img className='project-img' src={imageURL} alt='bookshop project' />
       </div>
       <div className='card-bottom'>
-        <span className='top-text'>{title}</span>
+        <h4 className='top-text'>{title}</h4>
         <br />
-        <span className='bottom-text'>{description}</span>
+        <p className='bottom-text'>{description}</p>
         <br />
         <a
           className='button'

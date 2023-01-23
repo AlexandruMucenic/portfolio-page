@@ -11,7 +11,8 @@
 .sites-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 24px 0;
+  gap: 12px;
+  padding: 24px 12px;
   border: 1px solid #c90016;
   box-shadow: 1px 3px 15px 18px rgb(0, 0, 0);
 }

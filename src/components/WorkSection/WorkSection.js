@@ -1,6 +1,4 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
-import ScrollDownLeft from '../ScrollDownLeft/ScrollDownLeft';
-import ScrollDownRight from '../ScrollDownRight/ScrollDownRight';
 
 import { projectsData } from '../../constants';
 

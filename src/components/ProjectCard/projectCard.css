@@ -1,22 +1,15 @@
 .card-wrapper {
   position: relative;
   width: 390px;
-  height: 290px;
+  height: 270px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  border-radius: 1%;
 }
 
-.card-wrapper:hover .image {
-  filter: blur(1.4px);
-  transform: scale(1.5);
-  overflow: hidden;
-  transition: all 0.3s linear;
-}
-
-.card-wrapper:hover .card-bottom {
-  transform: translate(0%, -50%);
-  transition: all 0.8s ease;
-  background-color: rgba(16, 15, 15, 0.627);
+.project-img {
+  width: 100%;
+  height: 100%;
 }
 
 .card-top {
@@ -34,13 +27,32 @@
   width: 100%;
   height: 100%;
   top: 50%;
-  padding: 6px;
+  padding: 12px;
   color: #fff;
   transform: translate(100%, -50%);
 }
 
+.bottom-text {
+  width: 95%;
+  word-wrap: normal;
+}
+
+.card-wrapper:hover .image {
+  filter: blur(1.4px);
+  transform: scale(1.5);
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.card-wrapper:hover .card-bottom {
+  transform: translate(0%, -50%);
+  transition: all 0.8s ease;
+  background-color: rgba(16, 15, 15, 0.627);
+}
+
 .button {
-  position: relative;
+  position: absolute;
+  bottom: 24px;
   width: fit-content;
   padding: 12px 6px;
   outline: none;
