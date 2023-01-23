@@ -22,6 +22,13 @@ function ContactSection() {
         <Button text='Send Message!' />
       </div>
       <div className='map-container'>
+        <div className='location-container'>
+          <h3>My Location</h3>
+          <p>Cluj-Napoca</p>
+          <p>Romania</p>
+          <p>Lat: 46.770439</p>
+          <p>Long: 23.591423</p>
+        </div>
         <img src={cluj} alt='Cluj-Napoca' />
       </div>
     </footer>
