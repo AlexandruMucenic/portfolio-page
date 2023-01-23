@@ -10,7 +10,7 @@ function Page() {
   return (
     <main className='main-container'>
       <HeaderSection>
-        <Button text='Contact Me!' />
+        <Button text='Contact Me!' src='#contact' />
       </HeaderSection>
       <WorkSection />
       <SkillsSection />

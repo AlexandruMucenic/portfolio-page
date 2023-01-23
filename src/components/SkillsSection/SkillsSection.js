@@ -1,6 +1,3 @@
-import ScrollDownLeft from '../ScrollDownLeft/ScrollDownLeft';
-import ScrollDownRight from '../ScrollDownRight/ScrollDownRight';
-
 import TagCloud from '@frank-mayer/react-tag-cloud';
 
 import './skillsSection.css';
@@ -11,15 +8,8 @@ function SkillsSection() {
       <div className='skills-description-container'>
         <h2 className='skills-title'>My Skills</h2>
         <p className='skills-description'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
+          My skills so far are based on a web development bootcamp from
+          FastTrackIT, and a couple of Udemy courses.
         </p>
       </div>
 
@@ -33,15 +23,21 @@ function SkillsSection() {
           'HTML',
           'CSS',
           'JavaScript',
-          'React.js',
           'PHP',
           'git',
-          'CSS',
-          'JavaScript',
           'React.js',
-          'PHP',
-          'git',
           'HTML',
+          'git',
+          'React.js',
+          'JavaScript',
+          'PHP',
+          'CSS',
+          'HTML',
+          'CSS',
+          'React.js',
+          'PHP',
+          'JavaScript',
+          'git',
         ]}
       </TagCloud>
     </section>

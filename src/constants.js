@@ -9,35 +9,35 @@ export const projectsData = [
     title: 'Bookshop',
     imageURL: bookshopURL,
     description:
-      'React e-commerce application. Users can search throught the available books, add/remove them from cart and increase the number of items in cart. Technologies: HTML, CSS, React.js, React Router, Node.js, Express.js, Node.js.',
+      'React e-commerce application. Users can search throught the available books, add/remove them from cart and increase the number of items in cart.',
     projectURL: 'https://amucenic-bookshop.netlify.app/',
   },
   {
     title: 'Today-I-Learned',
     imageURL: todayURL,
     description:
-      'React application that permits uploading facts based on certain topic categories, which can then be voted as correct, mind-blowing and false. Technologies: HTML, CSS, React.js, Supabase.',
+      'React application that permits uploading facts based on certain topic categories, which can then be voted as correct, mind-blowing and false.',
     projectURL: 'https://amucenic-today-i-learned.netlify.app',
   },
   {
     title: 'Forkify',
     imageURL: forkifyURL,
     description:
-      'JavaScript recipe application with MVC architecture. Implemented features as: search, add new recipes, bookmark recipes and increase number of servings. Final app from the Complete JavaScript course by Jonas Schmedtmann ',
+      'JavaScript recipe application with MVC architecture. Implemented features as: search, add new recipes, bookmark recipes and increase number of servings.',
     projectURL: 'https://amucenic-forkify.netlify.app',
   },
   {
     title: 'Traffic-Light',
     imageURL: trafficURL,
     description:
-      'First part calculates the gcd & lcm for 2 numbers.  Second part is a trafficlight with 2 different light patterns: day - all 3 colors & night - intermittent yellow. Technologies: HTML, CSS, JS',
+      'Javascript project containing two parts. First one calculates the gcd & lcm for 2 numbers.  Second one is a trafficlight with 2 different light patterns: day - all 3 colors & night - intermittent yellow.',
     projectURL: 'https://amucenic-trafficlight.netlify.app/',
   },
   {
     title: 'Counter',
     imageURL: counterURL,
     description:
-      'Manual counter that changes the background of the page once you are getting close to one of the limits. Technologies: HTML, CSS, React.js',
+      'React manual counter that changes the background of the page once you are getting close to one of the limits.',
     projectURL: 'https://amucenic-counter-app.netlify.app/',
   },
 ];
