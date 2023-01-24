@@ -1,48 +1,120 @@
 * {
   margin: 0;
   padding: 0;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+*::after,
+*::before {
+  position: absolute;
+  color: #6b6b6d;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   background: #1d1d1d;
-  color: white;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-  /* font-family: 'Dancing Script', cursive; */
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  font-family: 'Raleway', sans-serif;
-}
-
-button {
-  cursor: pointer;
 }
 
 .page-container {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  height: 60vh;
+  padding: 100px 48px 100px 48px;
+  margin: 12px;
 }
 
 h2 {
   font-size: 3em;
   color: #c90016;
+  padding: 30px 0 30px 6px;
+}
+
+h1 {
+  padding: 20px 0 20px 6px;
+}
+
+p {
+  padding: 30px 0 30px 6px;
 }
 
 ::placeholder {
   font-family: 'Maven Pro', sans-serif;
   font-size: 16px;
-  color: white;
+}
+
+/* Before and After Tag Labels */
+
+/* Add  two spans for body and html */
+
+section::before {
+  content: '<section>';
+  top: 0;
+  left: 0;
+}
+section::after {
+  content: '</section>';
+  left: 0;
+  bottom: 0;
+}
+
+h1::before {
+  content: '<h1>';
+  top: 0;
+  left: 0;
+}
+h1::after {
+  content: '</h1>';
+  left: 0;
+  bottom: 0;
+}
+
+h2::before {
+  content: '<h2>';
+  top: 0;
+  left: 0;
+}
+h2::after {
+  content: '</h2>';
+  left: 0;
+  bottom: 0;
+}
+
+form::before {
+  content: '<form>';
+  top: 0;
+  left: 0;
+}
+form::after {
+  content: '</form>';
+  left: 0;
+  bottom: 0;
+}
+
+p::before {
+  content: '<p>';
+  top: 0;
+  left: 0;
+}
+p::after {
+  content: '</p>';
+  left: 0;
+  bottom: 0;
 }

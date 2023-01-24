@@ -45,7 +45,7 @@ function ContactSection() {
   };
 
   return (
-    <footer className='contact-container' id='contact'>
+    <section className='contact-container' id='contact'>
       <div className='contact-form-container'>
         <h2 className='contact-form-title'>Contact Me</h2>
         <form ref={form} className='contact-form' onSubmit={handleOnSubmit}>
@@ -85,14 +85,14 @@ function ContactSection() {
       <div className='map-container'>
         <div className='location-container'>
           <h3>My Location</h3>
-          <p>Cluj-Napoca</p>
-          <p>Romania</p>
-          <p>Lat: 46.770439</p>
-          <p>Long: 23.591423</p>
+          <span>Cluj-Napoca</span>
+          <span>Romania</span>
+          <span>Lat: 46.770439</span>
+          <span>Long: 23.591423</span>
         </div>
         <img src={cluj} alt='Cluj-Napoca Map' />
       </div>
-    </footer>
+    </section>
   );
 }
 

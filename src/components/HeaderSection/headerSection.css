@@ -1,25 +1,21 @@
 .header-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  position: relative;
-  height: 55vh;
-  padding: 120px 48px 0 64px;
-}
-
-.header-title {
-  font-size: 10rem;
-  line-height: 11rem;
+  gap: 36px;
 }
 
 .header-title > span {
   display: inline-flex;
+  font-size: 10rem;
 }
-
 #m {
   margin-right: 2rem;
 }
 
+.header-title > span:hover {
+  color: #c90016;
+  animation: rubberBand 1s;
+}
 @keyframes rubberBand {
   0% {
     transform: scale3d(1, 1, 1);
@@ -44,27 +40,10 @@
   }
 }
 
-.header-title > span:hover {
-  color: #c90016;
-  animation: rubberBand 1s;
-}
-
-.header-description {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-self: flex-start;
+.header-description > p > span {
+  padding-left: 24px;
 }
 
 .header-child-container {
-  padding: 24px 0;
   align-self: flex-end;
-}
-
-.description-first-line {
-  padding-left: 20px;
-}
-
-.description-second-line {
-  padding-left: 40px;
 }

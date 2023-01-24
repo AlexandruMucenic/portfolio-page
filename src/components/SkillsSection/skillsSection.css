@@ -1,20 +1,23 @@
 .skills-container {
   display: flex;
-  gap: 15%;
-  height: 65vh;
-  padding: 100px 48px 0 64px;
+  justify-content: space-between;
 }
 
 .skills-description-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  width: 45%;
+  gap: 36px;
+  width: 40%;
 }
 
 .tagcloud {
   position: relative;
-  color: #c90016;
+  right: 40%;
+  width: 60%;
   font-size: 20px;
   font-weight: 600;
+}
+
+.tagcloud > span {
+  color: #c90016;
 }

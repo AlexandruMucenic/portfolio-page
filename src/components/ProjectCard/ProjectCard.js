@@ -8,7 +8,7 @@ function ProjectCard({ title, imageURL, description, projectURL }) {
       </div>
       <div className='card-bottom'>
         <h4 className='top-text'>{title}</h4>
-        <p className='bottom-text'>{description}</p>
+        <span className='bottom-text'>{description}</span>
         <a
           className='button'
           href={projectURL}

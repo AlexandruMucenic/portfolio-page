@@ -5,7 +5,7 @@ import './headerSection.css';
 
 function Header({ children }) {
   return (
-    <header className='header-container' id='about'>
+    <section className='header-container' id='about'>
       <h1 className='header-title'>
         <span>H</span>
         <span>i</span>
@@ -20,17 +20,17 @@ function Header({ children }) {
         <span>x</span>
       </h1>
       <div className='header-description'>
-        <p className='description-first-line'>
+        <p>
           Web development enthusiast, at the beginning of his carrer.
-        </p>
-        <p className='description-second-line'>
-          Welcome on my presentation page!
+          <br />
+          <br />
+          <span> Welcome on my presentation page!</span>
         </p>
       </div>
       <div className='header-child-container'>{children}</div>
       <ScrollDownLeft />
       <ScrollDownRight />
-    </header>
+    </section>
   );
 }
 

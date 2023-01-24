@@ -1,22 +1,14 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  position: relative;
-  height: 65vh;
-  padding: 100px 48px 0 64px;
-  letter-spacing: 1px;
+  gap: 36px;
 }
 
 .sites-container {
   display: flex;
   justify-content: space-evenly;
   gap: 12px;
-  padding: 24px 12px;
+  padding: 18px 12px;
   border: 1px solid #c90016;
-  box-shadow: 1px 3px 15px 18px rgb(0, 0, 0);
-}
-
-.work-description {
-  width: 85%;
+  box-shadow: 1px 3px 15px 18px black;
 }

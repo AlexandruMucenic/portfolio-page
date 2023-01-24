@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: row;
   gap: 6px;
-  justify-content: center;
   align-items: center;
   position: absolute;
-  left: -30px;
-  bottom: 10px;
+  left: -48px;
+  bottom: 100px;
   width: fit-content;
-  height: 16px;
-  font-size: 16px;
+  height: 14px;
+  font-size: 14px;
   transform: rotate(0.25turn);
 }
 
@@ -20,6 +19,9 @@
   transform: rotate(0.75turn);
 }
 
+.scroll-down-left > span {
+  animation: bounce 1s ease infinite;
+}
 @keyframes bounce {
   0% {
     transform: translateX(0);
@@ -30,8 +32,4 @@
   100% {
     transform: translateX(0);
   }
-}
-
-.scroll-down-left > span {
-  animation: bounce 1s ease infinite;
 }
