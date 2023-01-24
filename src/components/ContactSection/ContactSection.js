@@ -1,25 +1,84 @@
 import Button from '../Button/Button';
-
+import emailjs from '@emailjs/browser';
 import cluj from '../../imgs/Cluj.png';
 import './contactSection.css';
+import { useState } from 'react';
+import { useRef } from 'react';
 
 function ContactSection() {
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userSubject, setUserSubject] = useState('');
+  const [userMessage, setUserMessage] = useState('');
+  const [validationMessage, setValidationMesage] = useState('');
+
+  const form = useRef();
+
+  const handleOnSubmit = e => {
+    e.preventDefault();
+
+    if (userName && userEmail && userSubject && userMessage) {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_serviceID,
+          process.env.REACT_APP_templateID,
+          form.current,
+          process.env.REACT_APP_publicKey
+        )
+        .then(
+          () => {
+            setValidationMesage('Message sent successfully');
+          },
+          error => {
+            setValidationMesage(error.text);
+          }
+        );
+
+      e.target.reset();
+    } else {
+      setValidationMesage('Please fill in all the fields');
+    }
+
+    setTimeout(() => setValidationMesage(''), 5000);
+  };
+
   return (
     <footer className='contact-container' id='contact'>
       <div className='contact-form-container'>
         <h2 className='contact-form-title'>Contact Me</h2>
-        <form className='contact-form'>
+        <form ref={form} className='contact-form' onSubmit={handleOnSubmit}>
           <div className='name-email-container'>
-            <input className='contact-form-input' placeholder='Name' />
-            <input className='contact-form-input' placeholder='Email' />
+            <input
+              name='from_name'
+              className='contact-form-input'
+              type='text'
+              placeholder=' 🧑‍💻 Name'
+              onChange={e => setUserName(e.target.value)}
+            />
+            <input
+              name='from_email'
+              className='contact-form-input'
+              type='email'
+              placeholder='✉️ Email'
+              onChange={e => setUserEmail(e.target.value)}
+            />
           </div>
-          <input className='contact-form-input' placeholder='Subject' />
+          <input
+            name='from_subject'
+            className='contact-form-input'
+            type='text'
+            placeholder='Subject'
+            onChange={e => setUserSubject(e.target.value)}
+          />
           <textarea
+            name='from_message'
             className='contact-form-textarea'
             placeholder='Message'
+            onChange={e => setUserMessage(e.target.value)}
           ></textarea>
+          <span className='validation-message'>{validationMessage}</span>
+          <Button text='Send Message!' type='submit' />
         </form>
-        <Button text='Send Message!' />
       </div>
       <div className='map-container'>
         <div className='location-container'>
@@ -29,7 +88,7 @@ function ContactSection() {
           <p>Lat: 46.770439</p>
           <p>Long: 23.591423</p>
         </div>
-        <img src={cluj} alt='Cluj-Napoca' />
+        <img src={cluj} alt='Cluj-Napoca Map' />
       </div>
     </footer>
   );

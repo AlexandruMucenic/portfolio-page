@@ -1,9 +1,11 @@
 import './button.css';
 
-function Button({ text, src }) {
+function Button({ text, src, type }) {
   return (
     <a href={src}>
-      <button className='btn'>{text}</button>
+      <button className='btn' type={type}>
+        {text}
+      </button>
     </a>
   );
 }
