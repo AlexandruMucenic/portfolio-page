@@ -1,9 +1,11 @@
-import Button from '../Button/Button';
-import emailjs from '@emailjs/browser';
-import cluj from '../../imgs/Cluj.png';
-import './contactSection.css';
 import { useState } from 'react';
 import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+import Button from '../Button/Button';
+
+import cluj from '../../imgs/Cluj.png';
+import './contactSection.css';
 
 function ContactSection() {
   const [userName, setUserName] = useState('');
