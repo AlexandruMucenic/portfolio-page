@@ -7,15 +7,6 @@
   color: white;
 }
 
-*::after,
-*::before {
-  position: absolute;
-  color: #6b6b6d;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
 *::-webkit-scrollbar {
   display: none;
 }
@@ -37,7 +28,7 @@ button {
 
 section {
   height: 60vh;
-  padding: 100px 48px 100px 48px;
+  padding: 100px 48px 64px 48px;
   margin: 12px;
 }
 
@@ -61,18 +52,48 @@ p {
 }
 
 /* Before and After Tag Labels */
+*::after,
+*::before {
+  position: absolute;
+  color: #6b6b6d;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 
 /* Add  two spans for body and html */
 
+main::before {
+  content: '<html>';
+  top: 0;
+  left: 12px;
+}
+main::after {
+  content: '</html>';
+  bottom: 0;
+  left: 12px;
+}
+
+#htmlUp::before {
+  content: '<body>';
+  top: 24px;
+  left: 20px;
+}
+#htmlDown::before {
+  content: '</body>';
+  bottom: 24px;
+  left: 20px;
+}
+
 section::before {
   content: '<section>';
-  top: 0;
-  left: 0;
+  top: 36px;
+  left: 14px;
 }
 section::after {
   content: '</section>';
-  left: 0;
-  bottom: 0;
+  left: 14px;
+  bottom: 36px;
 }
 
 h1::before {

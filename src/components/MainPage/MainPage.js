@@ -9,12 +9,14 @@ import './mainPage.css';
 function Page() {
   return (
     <main className='main-container'>
+      <span id='htmlUp' />
       <HeaderSection>
         <Button text='Contact Me!' src='#contact' />
       </HeaderSection>
       <WorkSection />
       <SkillsSection />
       <ContactSection />
+      <span id='htmlDown' />
     </main>
   );
 }

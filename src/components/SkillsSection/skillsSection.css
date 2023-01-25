@@ -1,6 +1,7 @@
 .skills-container {
   display: flex;
   justify-content: space-between;
+  height: 55vh;
 }
 
 .skills-description-container {

@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import Button from '../Button/Button';
