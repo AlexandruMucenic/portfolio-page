@@ -16,6 +16,8 @@ function ContactSection() {
 
   const form = useRef();
 
+  console.log(userName);
+
   const handleOnSubmit = e => {
     e.preventDefault();
 
@@ -30,18 +32,22 @@ function ContactSection() {
         .then(
           () => {
             setValidationMesage('Message sent successfully');
+
+            setUserName('');
+            setUserEmail('');
+            setUserSubject('');
+            setUserMessage('');
           },
           error => {
             setValidationMesage(error.text);
           }
         );
-
       e.target.reset();
     } else {
       setValidationMesage('Please fill in all the fields');
     }
 
-    setTimeout(() => setValidationMesage(''), 5000);
+    setTimeout(() => setValidationMesage(''), 2500);
   };
 
   return (
