@@ -9,8 +9,10 @@ function WorkSection() {
     <section className='work-container' id='work'>
       <h2 className='work-title'>My Work</h2>
       <p className='work-description'>
-        Below, you can find the projects that I've made so far, with them I've
-        tried to sum up everything that I have learned.
+        This section is dedicated to the projects I've done by now.
+        <br />
+        Today-I-Learned and Forkify were developed during Udemy courses, the
+        others I've made from scratch.
       </p>
 
       <div className='sites-container'>
