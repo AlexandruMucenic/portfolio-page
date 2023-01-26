@@ -1,26 +1,12 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 100px;
-
-  border: 2px solid white;
+  gap: 36px;
 }
 
 .sites-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  align-self: center;
-
-  width: fit-content;
-  padding: 12px;
-
-  border: 2px solid green;
-}
-
-.sites-container > div {
-  width: 250px;
-  height: 200px;
-  border: 1px solid red;
+  justify-content: space-evenly;
+  gap: 12px;
+  padding: 18px 12px;
 }

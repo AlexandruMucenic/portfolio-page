@@ -1,11 +1,11 @@
 .logo-container {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  align-items: center;
+  padding-top: 12px;
 }
 
-img {
-  border-radius: 20%;
-  height: 40px;
-  width: 50px;
+.logo-container > img {
+  height: 65px;
+  width: 70px;
 }

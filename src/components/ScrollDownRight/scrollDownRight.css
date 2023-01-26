@@ -1,0 +1,35 @@
+.scroll-down-right {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  position: absolute;
+  right: -48px;
+  bottom: 136px;
+  width: fit-content;
+  height: 14px;
+  font-size: 14px;
+  transform: rotate(0.25turn);
+}
+
+.scroll-down-right > svg {
+  align-self: flex-end;
+  width: 12px;
+  height: 12px;
+  transform: rotate(0.75turn);
+}
+
+.scroll-down-right > span {
+  animation: bounce 1s ease infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

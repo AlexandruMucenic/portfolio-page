@@ -1,7 +1,6 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 
   position: absolute;
   right: 0;
@@ -12,8 +11,4 @@
 
 .main-container::-webkit-scrollbar {
   display: none;
-}
-
-main > section {
-  height: 90vh;
 }

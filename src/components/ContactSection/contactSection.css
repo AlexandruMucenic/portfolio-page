@@ -1,14 +1,99 @@
 .contact-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 100px;
+  gap: 48px;
+  height: 75vh;
+}
 
-  border: 2px solid white;
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  width: 50%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 14px;
+  padding: 48px 0 24px 0;
+}
+
+.contact-form-input {
+  outline: none;
+  padding: 12px;
+  border: none;
+  background: #2b2b2b;
+  box-shadow: 0px 1px 2px 3px black;
+  font-size: 16px;
+}
+
+.contact-form-textarea {
+  resize: none;
+  outline: none;
+  height: 250px;
+  border: none;
+  background: #2b2b2b;
+  padding: 12px;
+  box-shadow: 0px 1px 2px 3px black;
+  font-size: 16px;
+}
+
+.contact-form-container > .btn {
+  align-self: flex-end;
+}
+
+.name-email-container {
+  display: flex;
   gap: 12px;
+  width: 100%;
+}
+
+.name-email-container > input {
+  width: 50%;
+}
+
+.name-email-container > input::placeholder {
+  align-self: center;
+  height: 95%;
+}
+
+.validation-message {
+  align-self: center;
+  position: absolute;
+  bottom: 48px;
+  width: fit-content;
+  height: fit-content;
+  color: #c90016;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.map-container {
+  width: 50%;
+  height: 100%;
+}
+
+.map-container > img {
+  width: 95%;
+  height: 100%;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  background-color: #2b2b2b;
+  opacity: 0.9;
+}
+
+.contact-form > a {
+  align-self: flex-end;
 }

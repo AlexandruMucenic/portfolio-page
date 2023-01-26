@@ -1,34 +1,30 @@
+import ProjectCard from '../ProjectCard/ProjectCard';
+
+import { projectsData } from '../../constants';
+
 import './workSection.css';
 
 function WorkSection() {
   return (
-    <section className='work-container'>
+    <section className='work-container' id='work'>
       <h2 className='work-title'>My Work</h2>
       <p className='work-description'>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        This section is dedicated to the projects I've done by now.
+        <br />
+        Today-I-Learned and Forkify were developed during Udemy courses, the
+        others I've made from scratch.
       </p>
 
       <div className='sites-container'>
-        <div>
-          <p>something</p>
-        </div>
-        <div>
-          <p>something</p>
-        </div>
-        <div>
-          <p>something</p>
-        </div>
-        <div>
-          <p>something</p>
-        </div>
+        {projectsData.map(project => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            imageURL={project.imageURL}
+            description={project.description}
+            projectURL={project.projectURL}
+          />
+        ))}
       </div>
     </section>
   );
