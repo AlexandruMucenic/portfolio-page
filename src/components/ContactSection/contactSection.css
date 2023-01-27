@@ -1,7 +1,7 @@
 .contact-container {
   display: flex;
   gap: 48px;
-  height: 75vh;
+  height: 75%;
 }
 
 .contact-form-container {
