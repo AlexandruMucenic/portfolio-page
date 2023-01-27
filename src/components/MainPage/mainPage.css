@@ -1,14 +1,39 @@
 .main-container {
   display: flex;
   flex-direction: column;
-
   position: absolute;
   right: 0;
   overflow: scroll;
-
   width: 95%;
 }
 
-.main-container::-webkit-scrollbar {
-  display: none;
+@media (max-width: 1440px) {
+  .main-container {
+    width: 94%;
+  }
+}
+@media (max-width: 1280px) {
+  .main-container {
+    width: 93%;
+  }
+}
+@media (max-width: 1000px) {
+  .main-container {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .main-container {
+    width: 88%;
+  }
+}
+@media (max-width: 600px) {
+  .main-container {
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .main-container {
+    width: 85%;
+  }
 }

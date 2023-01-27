@@ -9,3 +9,10 @@
   height: 65px;
   width: 70px;
 }
+
+@media (max-width: 500px) {
+  .logo-container > img {
+    height: 100%;
+    width: 100%;
+  }
+}
