@@ -21,3 +21,11 @@
   fill: #c90016;
   transition: 0.5s ease-out;
 }
+
+@media (max-width: 1280px) {
+  .link-svg {
+    width: 24px;
+    height: 18px;
+    fill: white;
+  }
+}

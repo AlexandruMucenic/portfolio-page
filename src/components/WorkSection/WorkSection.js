@@ -1,6 +1,5 @@
-import ProjectCard from '../ProjectCard/ProjectCard';
-
 import { projectsData } from '../../constants';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 import './workSection.css';
 

@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import Button from '../Button/Button';
 
 import cluj from '../../imgs/Cluj.png';
@@ -14,8 +13,6 @@ function ContactSection() {
   const [validationMessage, setValidationMesage] = useState('');
 
   const form = useRef();
-
-  console.log(userName);
 
   const handleOnSubmit = e => {
     e.preventDefault();

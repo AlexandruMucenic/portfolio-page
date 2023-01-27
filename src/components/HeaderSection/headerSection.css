@@ -47,3 +47,28 @@
 .header-child-container {
   align-self: flex-end;
 }
+
+@media (max-width: 1850px) {
+  .header-child-container {
+    margin-right: 48px;
+  }
+}
+@media (max-width: 777px) {
+  .header-title > span {
+    display: inline-flex;
+    font-size: 5rem;
+  }
+  #m {
+    margin-right: 1rem;
+  }
+  .scroll-down-left,
+  .scroll-down-right {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .header-title > span {
+    display: inline-flex;
+    font-size: 4rem;
+  }
+}

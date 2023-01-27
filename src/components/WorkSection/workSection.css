@@ -6,7 +6,24 @@
 
 .sites-container {
   display: flex;
-  justify-content: space-evenly;
   gap: 12px;
-  padding: 18px 12px;
+  padding-bottom: 18px;
+}
+
+@media (max-width: 1850px) {
+  .sites-container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media (max-width: 1440px) {
+  .sites-container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media (max-width: 773px) {
+  .sites-container {
+    justify-content: center;
+  }
 }
