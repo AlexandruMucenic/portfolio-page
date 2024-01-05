@@ -29,8 +29,7 @@ export const projectsData = [
   {
     title: 'Traffic-Light',
     imageURL: trafficURL,
-    description:
-      'Javascript project containing two parts. First one calculates the gcd & lcm for 2 numbers.  Second one is a trafficlight with 2 different light patterns: day - all 3 colors & night - intermittent yellow.',
+    description: 'A simple traffic light, made with HTML, CSS and Javascript.',
     projectURL: 'https://amucenic-trafficlight.netlify.app/',
   },
   {
