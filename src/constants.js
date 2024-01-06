@@ -2,29 +2,46 @@ import todayURL from './imgs/today-i-learned.png';
 import forkifyURL from './imgs/forkify.png';
 import bookshopURL from './imgs/bookshop.png';
 import trafficURL from './imgs/traffic-light.png';
-import counterURL from './imgs/counter-app.png';
+import eventsURl from './imgs/react-events.png';
+import challengesURL from './imgs/react-challenges.png';
+import pukuURL from './imgs/puku.png';
+import bciUrl from './imgs/bci.png';
 
-export const projectsData = [
+export const personalProjectsData = [
   {
-    title: 'Today-I-Learned',
-    imageURL: todayURL,
+    title: 'Bookshop',
+    imageURL: bookshopURL,
     description:
-      'React application that permits uploading facts based on certain topic categories, which can then be voted as correct, mind-blowing and false.',
-    projectURL: 'https://amucenic-today-i-learned.netlify.app',
+      'Book shop made in React. Users can search throught the available books, add/remove them from cart and increase the number of items in cart.',
+    projectURL: 'https://amucenic-bookshop.netlify.app/',
+  },
+  {
+    title: 'React Events',
+    imageURL: eventsURl,
+    description:
+      'Event mangement app made using React and tanstack/react-query. Users can create, view, edit, search, and delete events.',
+    projectURL: 'https://amucenic-tanstack.netlify.app/',
+  },
+  {
+    title: 'React Challenges',
+    imageURL: challengesURL,
+    description:
+      'Challenge management app made with React. Users can create, view, edit, search, and delete challenges.',
+    projectURL: 'https://amucenic-react-animations.netlify.app/',
   },
   {
     title: 'Forkify',
     imageURL: forkifyURL,
     description:
-      'JavaScript recipe application with MVC architecture. Implemented features as: search, add new recipes, bookmark recipes and increase number of servings.',
+      'JavaScript recipe app with MVC architecture. Implemented features as: search, add new recipes, bookmark recipes and increase number of servings.',
     projectURL: 'https://amucenic-forkify.netlify.app',
   },
   {
-    title: 'Bookshop',
-    imageURL: bookshopURL,
+    title: 'Today-I-Learned',
+    imageURL: todayURL,
     description:
-      'React e-commerce application. Users can search throught the available books, add/remove them from cart and increase the number of items in cart.',
-    projectURL: 'https://amucenic-bookshop.netlify.app/',
+      'React page that permits uploading facts based on certain topic categories, which can then be voted as correct, mind-blowing and false.',
+    projectURL: 'https://amucenic-today-i-learned.netlify.app',
   },
   {
     title: 'Traffic-Light',
@@ -32,11 +49,19 @@ export const projectsData = [
     description: 'A simple traffic light, made with HTML, CSS and Javascript.',
     projectURL: 'https://amucenic-trafficlight.netlify.app/',
   },
+];
+
+export const workProjectsData = [
   {
-    title: 'Counter',
-    imageURL: counterURL,
-    description:
-      'React manual counter that changes the background of the page once you are getting close to one of the limits.',
-    projectURL: 'https://amucenic-counter-app.netlify.app/',
+    title: 'Puku Network',
+    imageURL: pukuURL,
+    description: 'Landing page made with Next.js, Typescript, and Material UI.',
+    projectURL: 'https://puku.network/',
+  },
+  {
+    title: 'BCI Romania',
+    imageURL: bciUrl,
+    description: 'Landing page made with React and Sass.',
+    projectURL: 'https://bciromania.com/',
   },
 ];

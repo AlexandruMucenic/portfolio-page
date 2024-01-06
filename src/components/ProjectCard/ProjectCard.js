@@ -2,18 +2,18 @@ import './projectCard.css';
 
 function ProjectCard({ title, imageURL, description, projectURL }) {
   return (
-    <div className='card-wrapper'>
-      <div className='card-top'>
-        <img className='project-img' src={imageURL} alt='bookshop project' />
+    <div className="card-wrapper">
+      <div className="card-top">
+        <img className="project-img" src={imageURL} alt="project preview" />
       </div>
-      <div className='card-bottom'>
-        <h4 className='top-text'>{title}</h4>
-        <span className='bottom-text'>{description}</span>
+      <div className="card-bottom">
+        <h4 className="top-text">{title}</h4>
+        <span className="bottom-text">{description}</span>
         <a
-          className='button'
+          className="button"
           href={projectURL}
-          target='_blank'
-          rel='noreferrer'
+          target="_blank"
+          rel="noreferrer"
         >
           See project
         </a>

@@ -8,15 +8,15 @@ import './mainPage.css';
 
 function Page() {
   return (
-    <main className='main-container'>
-      <span id='htmlUp' />
+    <main className="main-container">
+      <span id="htmlUp" />
       <HeaderSection>
-        <Button text='Contact Me!' src='#contact' />
+        <Button text="Contact Me!" src="#contact" />
       </HeaderSection>
-      <WorkSection />
       <SkillsSection />
+      <WorkSection />
       <ContactSection />
-      <span id='htmlDown' />
+      <span id="htmlDown" />
     </main>
   );
 }
